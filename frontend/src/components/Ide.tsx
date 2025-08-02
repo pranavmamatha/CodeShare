@@ -173,7 +173,7 @@ export default function Ide(props: { roomId: string }) {
     >
       <div
         style={{
-          padding: "0px 20px",
+          padding: "20px 20px",
           backgroundColor: "#2a2a2a",
           borderBottom: "1px solid #404040",
           display: "flex",
@@ -193,22 +193,22 @@ export default function Ide(props: { roomId: string }) {
           onClick={() => (window.location.href = "/")}
         >
           <img
-            src="/android-chrome-192x192.png"
+            src="/favicon.ico"
             alt="CodeShare"
             style={{
-              width: "80px",
-              height: "80px",
+              width: "40px",
+              height: "40px",
             }}
           />
-          <div
-            style={{
-              fontSize: "12px",
-              color: "#888",
-              fontFamily: "monospace",
-            }}
-          >
-            Room ID: {props.roomId}
-          </div>
+        </div>
+        <div
+          style={{
+            fontSize: "12px",
+            color: "#888",
+            fontFamily: "monospace",
+          }}
+        >
+          Room ID: {props.roomId}
         </div>
 
         <div
