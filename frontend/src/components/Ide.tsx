@@ -208,7 +208,7 @@ export default function Ide(props: { roomId: string }) {
             fontFamily: "monospace",
           }}
         >
-          Room ID: {props.roomId}
+          Room ID: {props.roomId} (This room will expire 24h from creation)
         </div>
 
         <div
