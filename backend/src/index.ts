@@ -4,6 +4,8 @@ import cors from "cors";
 import wsServer from "./websocket";
 import {rooms} from "./state";
 import { PrismaClient } from "../generated/prisma";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 const server = http.createServer(app);

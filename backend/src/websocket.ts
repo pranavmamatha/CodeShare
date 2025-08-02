@@ -3,6 +3,8 @@ import {rooms} from "./state";
 import http from "http";
 import { PrismaClient } from "../generated/prisma";
 import { createRoom } from "./index";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const prisma = new PrismaClient();
 
