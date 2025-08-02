@@ -108,7 +108,7 @@ export default function Ide(props: { roomId: string }) {
       if (ws.current && ws.current.readyState === WebSocket.OPEN) {
         ws.current.send(joinData);
       }
-    }, 100);
+    }, 2000);
 
     ws.current.onmessage = (event) => {
       setCode(event.data);
