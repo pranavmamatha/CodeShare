@@ -73,7 +73,7 @@ export default function Home() {
     }}
   >
     <img 
-      src="./src/assets/android-chrome-512x512.png" 
+      src="/android-chrome-512x512.png" 
       alt="CodeShare Logo" 
       style={{
         width: "175px",

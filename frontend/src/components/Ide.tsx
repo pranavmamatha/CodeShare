@@ -92,7 +92,7 @@ export default function Ide(props: { roomId: string }) {
 
   useEffect(() => {
     async function InitialData() {
-      const data = (await axios.get(`/data/${props.roomId}`)).data;
+      const data = (await axios.get(`${backendURL}/data/${props.roomId}`)).data;
       setCode(data.code);
     }
     InitialData();
@@ -193,7 +193,7 @@ export default function Ide(props: { roomId: string }) {
           onClick={() => (window.location.href = "/")}
         >
           <img
-            src="./src/assets/android-chrome-192x192.png"
+            src="/android-chrome-192x192.png"
             alt="CodeShare"
             style={{
               width: "80px",
